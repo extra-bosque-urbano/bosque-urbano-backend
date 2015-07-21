@@ -1,0 +1,16 @@
+apply plugin: "java"
+apply plugin: "application"
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.5'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile 'com.sparkjava:spark-core:2.2'
+}
+
+mainClassName = 'mx.org.extra.bosqueurbano.App'
